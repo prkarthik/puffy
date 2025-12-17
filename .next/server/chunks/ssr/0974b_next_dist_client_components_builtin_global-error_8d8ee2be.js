@@ -1,0 +1,3 @@
+module.exports=[5954,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(7104);a.n(d("[project]/WebSites/puffy/puffy-app-t/puffy-app-temo/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},68169,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(7104);a.n(d("[project]/WebSites/puffy/puffy-app-t/puffy-app-temo/node_modules/next/dist/client/components/builtin/global-error.js"))},50519,a=>{"use strict";a.i(5954);var b=a.i(68169);a.n(b)}];
+
+//# sourceMappingURL=0974b_next_dist_client_components_builtin_global-error_8d8ee2be.js.map
