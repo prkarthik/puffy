@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Project Colors */
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-surface-dark: #1c2127;
+
+  /* Fonts */
+  --font-display: var(--font-manrope), "Manrope", sans-serif;
+
+  /* Border Radius */
+  --radius-xl: 0.75rem;
+}
+
+/* Dark mode variables applied when .dark class is present */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  font-family: var(--font-display);
+}
+
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  15% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-award-slide {
+  animation: slide-in-out 4s linear infinite;
+  /* Adjusted to match interval? No, 'forwards' if I remount. */
+}
+
+/* Actually, if I rely on React remounting with key, I want 'forwards' or just run once per mount. */
+.animate-award-mount {
+  animation: slide-in-out 3.5s ease-in-out forwards;
+}
